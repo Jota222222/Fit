@@ -43,7 +43,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               value={formData.age || ''}
               onChange={handleChange}
               placeholder="0"
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+              className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
           </div>
@@ -55,7 +55,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               value={formData.weight || ''}
               onChange={handleChange}
               placeholder="0"
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+              className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
           </div>
@@ -67,7 +67,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               value={formData.height || ''}
               onChange={handleChange}
               placeholder="0"
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+              className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
           </div>
@@ -87,7 +87,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
                  value={formData.targetWeight || ''}
                  onChange={handleChange}
                  placeholder="Ex: 90"
-                 className="w-full px-4 py-2 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+                 className="w-full px-4 py-2 bg-white text-slate-900 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                />
              </div>
              <div>
@@ -98,7 +98,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
                  value={formData.timeline || ''}
                  onChange={handleChange}
                  placeholder="Ex: 30 Dias"
-                 className="w-full px-4 py-2 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+                 className="w-full px-4 py-2 bg-white text-slate-900 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                />
              </div>
           </div>
@@ -111,7 +111,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               name="frequency"
               value={formData.frequency}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+              className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
             >
               <option value={3}>3 Dias</option>
               <option value={4}>4 Dias</option>
@@ -126,7 +126,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
                 name="location"
                 value={formData.location}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition appearance-none"
+                className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition appearance-none"
               >
                 <option value="home">Em Casa</option>
                 <option value="gym">Ginásio</option>
@@ -140,7 +140,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               name="goal"
               value={formData.goal}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
+              className="w-full px-4 py-2 bg-white text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
             >
               <option value="Perda de Peso">Perda de Peso</option>
               <option value="Fortalecimento">Fortalecimento</option>

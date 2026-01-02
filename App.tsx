@@ -12,7 +12,7 @@ const DEFAULT_PROFILE: UserProfile = {
   targetWeight: 0,
   timeline: "",
   goal: "Perda de Peso",
-  frequency: 0,
+  frequency: 3,
   location: "home",
   conditions: "",
 };
