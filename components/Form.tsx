@@ -30,7 +30,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
     <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
       <div className="bg-slate-50 px-6 py-4 border-b border-slate-100">
         <h2 className="text-lg font-semibold text-slate-800">O seu Perfil Biométrico</h2>
-        <p className="text-sm text-slate-500">Confirme os seus dados para gerar o plano ideal.</p>
+        <p className="text-sm text-slate-500">Preencha os seus dados para gerar o plano ideal.</p>
       </div>
       
       <form onSubmit={handleSubmit} className="p-6 space-y-6">
@@ -40,8 +40,9 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
             <input
               type="number"
               name="age"
-              value={formData.age}
+              value={formData.age || ''}
               onChange={handleChange}
+              placeholder="0"
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
@@ -51,8 +52,9 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
             <input
               type="number"
               name="weight"
-              value={formData.weight}
+              value={formData.weight || ''}
               onChange={handleChange}
+              placeholder="0"
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
@@ -62,8 +64,9 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
             <input
               type="number"
               name="height"
-              value={formData.height}
+              value={formData.height || ''}
               onChange={handleChange}
+              placeholder="0"
               className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
               required
             />
@@ -94,7 +97,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
                  name="timeline"
                  value={formData.timeline || ''}
                  onChange={handleChange}
-                 placeholder="Ex: Fim de Março"
+                 placeholder="Ex: 30 Dias"
                  className="w-full px-4 py-2 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"
                />
              </div>
@@ -157,7 +160,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
               onChange={handleChange}
               rows={3}
               className="w-full px-4 py-2 border border-red-200 bg-red-50 text-red-900 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition placeholder-red-300"
-              placeholder="Descreva as suas lesões..."
+              placeholder="Descreva lesões (ex: Hérnia discal, dor no joelho...)"
               required
             />
             <div className="absolute top-3 right-3 text-red-400">
@@ -165,7 +168,7 @@ const Form: React.FC<FormProps> = ({ initialData, onSubmit, isLoading }) => {
             </div>
           </div>
           <p className="mt-1 text-xs text-red-600">
-            * Estas informações são cruciais para a IA evitar exercícios perigosos para a sua cervical.
+            * Estas informações são cruciais para a IA evitar exercícios perigosos.
           </p>
         </div>
 

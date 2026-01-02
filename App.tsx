@@ -6,15 +6,15 @@ import { UserProfile, WorkoutPlanResponse } from './types';
 import { generateWorkoutPlan } from './services/geminiService';
 
 const DEFAULT_PROFILE: UserProfile = {
-  age: 46,
-  height: 187,
-  weight: 110,
-  targetWeight: 90,
-  timeline: "Fim de Março",
+  age: 0,
+  height: 0,
+  weight: 0,
+  targetWeight: 0,
+  timeline: "",
   goal: "Perda de Peso",
-  frequency: 5,
+  frequency: 3,
   location: "home",
-  conditions: "3 hérnias na cervical. Dor ao comprimir pescoço ou impacto vertical.",
+  conditions: "",
 };
 
 const App: React.FC = () => {
