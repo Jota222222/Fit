@@ -6,13 +6,13 @@ import { UserProfile, WorkoutPlanResponse } from './types';
 import { generateWorkoutPlan } from './services/geminiService';
 
 const DEFAULT_PROFILE: UserProfile = {
-  age: 0,
-  height: 0,
-  weight: 0,
+  age: 46,
+  height: 187,
+  weight: 110,
   targetWeight: 0,
   timeline: "",
   goal: "Perda de Peso",
-  frequency: 3,
+  frequency: 5,
   location: "home",
   conditions: "",
 };
